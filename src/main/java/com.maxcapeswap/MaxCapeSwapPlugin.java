@@ -105,7 +105,7 @@ public class MaxCapeSwapPlugin extends Plugin
 		}
 	}
 
-	@Subscribe
+	@Subscribe(priority = -10)
 	public void onPostMenuSort(PostMenuSort event)
 	{
 		if (client.isMenuOpen() || !regions.contains(currentRegion()))
